@@ -13,7 +13,7 @@ This project presents an interactive Power BI dashboard developed using the Shop
 
 ---
 
-### Drill Through Analysis
+### Order-Level Drill-Through Analysis
 
 ![Drill Through](Images/Drill_Through.png)
 
