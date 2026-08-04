@@ -5,6 +5,17 @@
 This project presents an interactive Power BI dashboard developed using the ShopNest e-commerce dataset. The dashboard analyzes sales performance, customer behavior, delivery performance, payment preferences, product ratings, and regional sales trends to support business decision-making.
 
 ---
+## 🖼️ Dashboard Preview
+
+### Executive Dashboard
+
+![Executive Dashboard](Images/Executive_Dashboard.png)
+
+---
+
+### Drill Through Analysis
+
+![Drill Through](Images/Drill_Through.png)
 
 ## 🎯 Business Objective
 
