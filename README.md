@@ -1,4 +1,4 @@
-# 📊 ShopNest Sales & Operations Dashboard
+# 📊 ShopNest Sales & Operations Dashboard (Power BI)
 
 ## 📌 Project Overview
 
