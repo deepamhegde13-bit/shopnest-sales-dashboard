@@ -86,12 +86,12 @@ Detailed order-level analysis including:
 
 ## 📈 Key Business Insights
 
-- Beauty and health-related products generated high revenue.
-- Credit cards were the most frequently used payment method.
-- Regional sales varied across different states.
-- Certain product categories experienced higher delivery delays.
-- Sales trends changed across quarters and years.
-- Product ratings highlighted opportunities for quality improvement.
+- Beauty & Health generated the highest overall revenue among all product categories.
+- Credit Card was the dominant payment method, accounting for nearly three-fourths of all transactions.
+- Bed, Bath & Table recorded one of the highest numbers of delayed deliveries, indicating potential logistics challenges.
+- Sales showed steady growth between 2016 and 2018.
+- Product ratings varied across categories, highlighting opportunities to improve customer satisfaction in lower-rated products.
+- Regional sales distribution indicated varying performance across Brazilian states, with São Paulo leading total sales.
 
 ---
 
@@ -103,8 +103,18 @@ shopnest-sales-dashboard/
 ├── README.md
 ├── ShopNest Sales & Operations Dashboard.pbix
 ├── Dataset/
-├── Images/
-└── Documentation/
+│   ├── Customers.csv
+│   ├── Geolocation.csv
+│   ├── Order_items.csv
+│   ├── Order_payments.csv
+│   ├── Order_reviews.csv
+|   ├── Orders.csv
+│   ├── product_category_name_translation.csv
+|   ├── Products.csv
+│   └── Sellers.csv
+└── Images/
+    ├── Executive_Dashboard.png
+    └── Drill_Through.png
 ```
 
 ---
