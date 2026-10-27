@@ -77,7 +77,7 @@ The dashboard uses multiple related datasets including:
 5. Select **Home → Refresh** to reload the data.
 6. Review the report pages and visuals for any errors after refreshing.
 
-**Note:** The exact source paths and refresh behaviour depend on how the data sources are configured in the PBIX file. These instructions describe the general process; the file paths have not been independently verified.
+**Note:** The PBIX file uses nine CSV data sources stored in the repository's `Dataset` folder. The source paths were updated and tested in Power BI Desktop, and the report loaded successfully with its existing visuals intact. If you download or clone the repository to a different location, check the data source paths and update them to point to the local `Dataset` folder before refreshing.
 
 ---
 
