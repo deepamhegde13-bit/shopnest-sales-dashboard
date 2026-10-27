@@ -57,6 +57,30 @@ The dashboard uses multiple related datasets including:
 
 ---
 
+## 🔄 How to Open and Refresh the Dashboard
+
+### Requirements
+- Power BI Desktop installed on Windows.
+- The repository's `Dataset` folder containing the required CSV files.
+- The `ShopNest Sales & Operations Dashboard.pbix` file.
+
+### Open the Dashboard
+1. Download or clone this repository to your computer.
+2. Open `ShopNest Sales & Operations Dashboard.pbix` using Power BI Desktop.
+3. If Power BI prompts you to locate a data source, update the file paths to match the location of the downloaded repository and its `Dataset` folder.
+
+### Refresh the Data
+1. Confirm that the required CSV files are available in the `Dataset` folder.
+2. In Power BI Desktop, open **Transform data → Data source settings** if the existing file paths need to be updated.
+3. Update the source paths to the local CSV files, as required.
+4. Select **Close & Apply** if you made changes in Power Query.
+5. Select **Home → Refresh** to reload the data.
+6. Review the report pages and visuals for any errors after refreshing.
+
+**Note:** The exact source paths and refresh behaviour depend on how the data sources are configured in the PBIX file. These instructions describe the general process; the file paths have not been independently verified.
+
+---
+
 ## 📊 Dashboard Features
 - Interactive Filters
 - Drill-through Navigation
