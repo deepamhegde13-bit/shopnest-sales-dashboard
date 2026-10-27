@@ -47,6 +47,23 @@ The dashboard uses multiple related datasets including:
 
 ---
 
+## 📅 Dataset Source and Reporting Period
+
+### Dataset Source
+This project uses the **Brazilian E-Commerce Public Dataset by Olist**, publicly available on Kaggle.
+
+Source: [Brazilian E-Commerce Public Dataset by Olist](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
+
+The dataset contains related CSV files covering orders, customers, products, sellers, payments, customer reviews, and geolocation information for Brazilian e-commerce transactions.
+
+### Reporting Period
+The order purchase timestamps in the dataset range from September 2016 to October 2018. The dashboard includes yearly and quarterly sales trend analysis across this period.
+
+### Data Preparation
+The CSV files are organised in the repository's `Dataset` folder and loaded into Power BI Desktop. Power Query is used to connect to the source files and prepare the data for analysis.
+
+---
+
 ## 🛠️ Tools & Technologies
 
 - Power BI Desktop
