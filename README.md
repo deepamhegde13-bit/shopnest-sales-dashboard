@@ -98,13 +98,50 @@ The CSV files are organised in the repository's `Dataset` folder and loaded into
 
 ---
 
+## 📊 Dashboard Metrics and Visual Definitions
+
+### Sales Analysis
+- **Top 10 Products:** Ranks product categories using the sum of the `price` field.
+- **Sales by Quarter:** Shows quarterly sales trends across the reporting period.
+- **Total Sales by Year:** Compares annual sales totals for 2016, 2017, and 2018.
+- **Regional Sales:** Compares sales across Brazilian states.
+
+Total Sales / Item-Price Value: Calculated as the sum of the price field in the Order_Items table (SUM(Order_Items[price])). This represents the total value of order items before freight charges; it should not be interpreted as net profit.
+
+### Order and Delivery Analysis
+- **Delayed Orders:** Displays delayed-order counts by product category. The visual shows a total of 6,535.
+- **Late & On-Time Orders:** Compares monthly delayed and on-time order counts. The displayed totals are 6,535 delayed orders and 89,941 on-time orders.
+- The dataset contains 99,441 distinct orders before report-level filtering: 6,535 classified as delayed (Orders delivered after the estimated delivery date), 89,941 as on time (Orders delivered on or before the estimated delivery date), and 2,965 with missing delivery dates (Orders for which the actual customer delivery date is unavailable).
+
+**Business interpretation**: Most orders with available delivery dates were classified as on time. Orders with missing delivery dates are reported separately rather than automatically classified as delayed or on time, helping avoid misleading delivery-performance conclusions.
+
+### Payment Type Analysis
+The payment-type pie chart compares the distribution of payment records across payment methods. The `Frequent_Payment_Type` DAX measure uses `COUNT(Order_payments[payment_type])` to count non-blank payment-type entries.
+
+The dashboard shows the following distribution:
+- **Credit card:** 73.92%
+- **Boleto:** 19.04%
+- **Voucher:** 5.56%
+- **Debit card:** 1.47%
+- **Not defined:** 0%
+
+**Business interpretation**: Credit card is the most frequently recorded payment type in the dataset, followed by boleto. This distribution describes payment records, not necessarily the percentage of unique orders or the share of total payment value.
+
+### Product Rating Analysis
+- **Lowest Rating Products:** Compares products or categories with lower displayed rating values.
+- **Highest Rating Products:** Compares products or categories with higher displayed rating values.
+
+**Interpretation note:** The values above are taken from the dashboard visuals. Their exact calculation methods depend on the Power BI measures, fields, relationships, and filters used in the report.
+
+---
+
 ## 📊 Dashboard Features
 - Interactive Filters
 - Drill-through Navigation
 
 ### Executive Dashboard
 
-- Top 10 Products by Revenue
+- Top 10 Product Categories by Item-Price Value
 - Delayed Orders Analysis
 - On-Time vs Delayed Orders
 - Regional Sales Performance
@@ -127,12 +164,12 @@ Detailed order-level analysis including:
 
 ## 📈 Key Business Insights
 
-- Beauty & Health generated the highest overall revenue among all product categories.
-- Credit Card was the dominant payment method, accounting for nearly three-fourths of all transactions.
-- Bed, Bath & Table recorded one of the highest numbers of delayed deliveries, indicating potential logistics challenges.
-- Sales showed steady growth between 2016 and 2018.
-- Product ratings varied across categories, highlighting opportunities to improve customer satisfaction in lower-rated products.
-- Regional sales distribution indicated varying performance across Brazilian states, with São Paulo leading total sales.
+- **Product Performance**: Product categories show different item-price totals, helping identify higher-performing categories.
+- **Payment Preferences**: Credit card was the most frequently recorded payment type, accounting for 73.92% of payment-type records.
+- **Delivery Performance**: The dashboard identifies product categories with higher delayed-order counts, highlighting areas for further logistics investigation.
+- **Sales Trends**: Total item-price value increased from 2016 to 2018.
+- **Product Ratings**: Ratings vary across products and categories, helping identify areas for potential customer-experience improvement.
+- **Regional Performance**: São Paulo recorded the highest sales total among the Brazilian states shown in the dashboard.
 
 ---
 
